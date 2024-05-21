@@ -1,0 +1,21 @@
+#include 'totvs.ch'
+#include 'protheus.ch'
+
+/*/{Protheus.doc} zTDialog
+description
+@type function
+@version 
+@author Placido
+@since 08/11/2020
+@return return_type, return_description
+@see https://tdn.totvs.com/display/tec/TDialog
+/*/
+User Function zTDialog()
+Local oDgl1 //Variável que receberá a chamada da classe TDialog
+
+//PARAMETROS           1   2    3     4          5                       6  7  8  9   10         11     12  13  14         
+oDgl1 := TDialog():New(0,  0,  500,  300, 'Cadastro de Protheuzeiro(a)',  ,  ,  , , CLR_BLACK,CLR_WHITE,  ,   , .T.)
+
+oDgl1:Activate(,,,.T.)
+
+return
